@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+  
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+  
+.links a {
+    color:antiquewhite;
+    text-decoration: none;
+    margin-right: 20px;
+}
+  
+.button button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+.button button:hover {
+    background-color: #0056b3;
+}
+
+.menu-icon {
+    display: none;
+}
+  
+@media (max-width: 768px) {
+    .links {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      padding: 10px;
+    }
+  
+    .links.active {
+      display: flex;
+    }
+  
+    .logo {
+      margin-left: 20px;
+    }
+  
+    header {
+      padding: 10px;
+    }
+  
+    .links a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 24px;
+    }
+}
+
+#About {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+    width: 100%;
+}
+  
+.about-text {
+    max-width: 500px;
+    text-align: center;
+}
+  
+.about-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.about-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+  
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+  
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+  
+  .btn:hover {
+    background-color: #0056b3;
+}
+  
+img {
+    max-width: 500px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #About {
+      flex-direction: column-reverse;
+    }
+  
+    .about-text {
+      max-width: 100%;
+    }
+  
+    img {
+      max-width: 100%;
+    }
+}
+  
