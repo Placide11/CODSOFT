@@ -12,7 +12,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 50px;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1035;
 }
   
 .logo img {
@@ -24,6 +32,14 @@ header {
     color:antiquewhite;
     text-decoration: none;
     margin-right: 20px;
+}
+
+.links a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  font-size: 20px;
+  transition-duration: 0.5s;
 }
   
 .button button {
@@ -40,6 +56,8 @@ header {
   
 .button button:hover {
     background-color: #0056b3;
+    font-size: 18px;
+    transition-duration: 0.5s;
 }
 
 .menu-icon {
@@ -87,6 +105,8 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 50px 0;
+    margin-bottom: 50px;
+    margin-top: 50px;
     width: 100%;
 }
   
