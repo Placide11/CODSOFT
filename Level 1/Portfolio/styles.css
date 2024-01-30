@@ -159,6 +159,8 @@ img {
 .about-section h1 {
   font-size: 36px;
   margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
 }
 
 .about-text2 {
@@ -199,6 +201,12 @@ img {
 
 
 @media (max-width: 768px) {
+  .about-section {
+    height: auto;
+    padding: 20px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
   .about-text2{
     flex-direction: column;
     align-items: center;
