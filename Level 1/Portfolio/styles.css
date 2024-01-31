@@ -250,3 +250,65 @@ img {
     margin-bottom: 20px;
   }
 }
+
+#Skills {
+  margin-top: 200px;
+}
+
+#Skills h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills div {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 200px;
+}
+
+.skills div h2 {
+  font-size: 24px;  
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.skills div ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills div ul li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  #Skills {
+    margin-top: 80px;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .skills div {
+    margin-bottom: 20px;
+  }
+}
