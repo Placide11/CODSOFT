@@ -63,42 +63,6 @@ header {
 .menu-icon {
     display: none;
 }
-  
-@media (max-width: 768px) {
-    .links {
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      background-color: #333;
-      padding: 10px;
-    }
-  
-    .links.active {
-      display: flex;
-    }
-  
-    .logo {
-      margin-left: 20px;
-    }
-  
-    header {
-      padding: 10px;
-    }
-  
-    .links a {
-      display: block;
-      margin: 10px 0;
-    }
-  
-    .menu-icon {
-      display: block;
-      cursor: pointer;
-      font-size: 24px;
-    }
-}
 
 #About {
     display: flex;
@@ -154,20 +118,6 @@ img {
     padding: 10px;
 }
 
-@media (max-width: 768px) {
-    #About {
-      flex-direction: column-reverse;
-    }
-  
-    .about-text {
-      max-width: 100%;
-    }
-  
-    img {
-      max-width: 100%;
-    }
-}
-
 .about-section {
   background-color:burlywood;
   padding: 50px 0;
@@ -219,38 +169,6 @@ img {
   cursor: pointer;
 }
 
-
-@media (max-width: 768px) {
-  .about-section {
-    height: auto;
-    padding: 20px 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-
-  .about-text2{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    justify-content: space-between;
-  }
-
-  .about-text2 p {
-    width:fit-content;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: larger;
-  }
-
-  .about-text2 img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-}
-
 #Skills {
   margin-top: 200px;
 }
@@ -300,6 +218,81 @@ img {
 }
 
 @media (max-width: 768px) {
+  .links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .links a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  #About {
+    flex-direction: column-reverse;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .about-section {
+    height: auto;
+    padding: 20px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .about-text2{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .about-text2 p {
+    width:fit-content;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: larger;
+  }
+
+  .about-text2 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
   #Skills {
     margin-top: 80px;
   }
