@@ -217,6 +217,107 @@ img {
   margin-bottom: 5px;
 }
 
+#Projects {
+  display: flex;
+  flex-direction: column;
+  background-color: darkkhaki;
+  height: fit-content;
+}
+
+#Projects h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  grid-area: "projects";
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projects div {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.project1, .project2, .project3, .project4 {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+}
+
+.projects div:hover {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  opacity: 0.8;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 1.5);
+}
+.projects a {
+  text-decoration: none;
+}
+
+.project1 h2 , .project2 h2, .project3 h2, .project4 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project1 {
+  color: #ccc;
+  background-image: url(images/weather.jpeg);
+  background-size: cover;
+}
+
+.project2 {
+  color: #ccc;
+  background-image: url(images/library.avif);
+  background-size: cover;
+}
+
+.project3 {
+  color: #ccc;
+  background-image: url(images/url.jpg);
+  background-size: cover;
+}
+
+.project4 {
+  color: #ccc;
+  background-image: url(images/AirBnb.jpg);
+  background-size: cover;
+}
+
+.project4:hover {
+  color: black;
+}
+
+.p {
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  text-align: center; 
+}
+
+.p a {
+  text-decoration: none;
+  color: brown;
+}
+
 /**-- for smaller devices --**/
 
 @media (max-width: 768px) {
@@ -305,5 +406,10 @@ img {
 
   .skills div {
     margin-bottom: 20px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
   }
 }
