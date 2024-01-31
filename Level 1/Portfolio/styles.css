@@ -273,6 +273,7 @@ img {
 }
 
 .project1 h2 , .project2 h2, .project3 h2, .project4 h2 {
+  text-decoration: none;
   font-size: 24px;
   margin-bottom: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
