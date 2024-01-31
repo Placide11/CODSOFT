@@ -217,6 +217,8 @@ img {
   margin-bottom: 5px;
 }
 
+/**-- for smaller devices --**/
+
 @media (max-width: 768px) {
   .links {
     display: none;
