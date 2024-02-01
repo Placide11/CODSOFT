@@ -148,7 +148,7 @@ img {
   margin: 0;
   padding: 20px;
   text-align: left;
-  width: 50%;
+  width: 500px;
   height: 300px;
   margin-left: 50px;
   box-sizing: border-box;
@@ -166,7 +166,6 @@ img {
   background-color: #007bff;
   color: #fff;
   transition: background-color 0.3s ease;
-  cursor: pointer;
 }
 
 #Skills {
@@ -315,6 +314,48 @@ img {
   color: brown;
 }
 
+#Contact {
+  text-align: center;
+  padding: 50px;
+}
+
+#Contact h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+
+#Contact form {
+  margin-top: 20px;
+}
+
+#Contact input[type="text"],
+#Contact input[type="email"],
+#Contact textarea {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+}
+
+#Contact input[type="submit"],
+#Contact input[type="reset"] {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color:#007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#Contact input[type="submit"]:hover,
+#Contact input[type="reset"]:hover {
+  background-color: #0056b3;
+}
 /**-- for smaller devices --**/
 
 @media (max-width: 768px) {
@@ -408,5 +449,22 @@ img {
   .projects {
     grid-template-columns: 1fr;
     grid-gap: 30px;
+  }
+
+  #Contact {
+    padding: 20px;
+  }
+
+  #Contact input[type="text"],
+  #Contact input[type="email"],
+  #Contact textarea {
+    width: 100%;
+  }
+
+  #Contact input[type="submit"],
+  #Contact input[type="reset"] {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
   }
 }
