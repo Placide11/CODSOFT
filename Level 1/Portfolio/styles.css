@@ -365,6 +365,13 @@ img {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(212, 207, 207, 0.2);
+  width: 300px;
+  height: auto;
+  background-color:#ccc;
 }
 
 .connect h2 {
