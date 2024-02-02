@@ -507,4 +507,27 @@ footer {
     width: 100%;
     text-align: center;
   }
+
+  .connect {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .connect h2 {
+    font-size: 20px;
+  }
+
+  .connect li {
+    margin: 0 5px;
+  }
+
+  .connect a img {
+    width: 20px;
+    height: 20px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 5px;
+  }
 }
