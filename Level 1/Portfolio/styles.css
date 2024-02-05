@@ -123,7 +123,7 @@ img {
   padding: 50px 0;
   text-align: center;
   width: 100%;
-  height:  300px;
+  height: 100%;
 }
 
 .about-section h1 {
@@ -149,7 +149,7 @@ img {
   padding: 20px;
   text-align: left;
   width: 50%;
-  height: 300px;
+  height:fit-content;
   margin-left: 50px;
   box-sizing: border-box;
   border-color: #333;
@@ -168,8 +168,16 @@ img {
   transition: background-color 0.3s ease;
 }
 
+.about-section img {
+  max-width: 400px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
 #Skills {
-  margin-top: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 #Skills h1 {
@@ -372,6 +380,8 @@ img {
   width: 300px;
   height: auto;
   background-color:#ccc;
+  margin-left: auto ;
+  margin-right: auto;
 }
 
 .connect h2 {
